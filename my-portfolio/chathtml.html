@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("green.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .form-container {
+            background: #cd12ea;
+            padding: 30px;
+            max-width: 400px;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background: #0816d9;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+
+        .menubar a {
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        #success-message {
+            display: none;
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SRI MANAKULA VINAYAGAR ENGINEERING COLLEGE</h1>
+
+    <div class="menubar">
+        <center>
+            <p>
+                <a href="form.html">Home</a>
+                <a href="#">About</a>
+                <a href="registration.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </p>
+        </center>
+    </div>
+
+    <div class="form-container">
+        <form onsubmit="return showSuccessMessage();" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="dob">Date of Birth (D/M/Y):</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="twelfth_passed">12th Passed in Current Year:</label>
+            <select name="twelfth_passed" id="twelfth_passed" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="puducherry">Puducherry</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+            </select>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- Success message placeholder -->
+        <p id="success-message">✅ Registration Completed Successfully!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </p>
+    </footer>
+
+    <script>
+        function showSuccessMessage() {
+            document.getElementById('success-message').style.display = 'block';
+
+            // Prevent real submission for demo purposes
+            return false;
+        }
+    </script>
+</body>
+</html>

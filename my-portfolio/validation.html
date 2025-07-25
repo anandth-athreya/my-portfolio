@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>registation</title>
+    <br>
+    <h1>SRI MANAKULA VINAYAGAR ENGINEERING COLLEGE</h1>
+    <br>
+    <STYle>
+        .from-container {
+            background: #cd12ea;
+            padding: 30px;
+            max-width: 400px;
+            margin:auto;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        sbmit_registation {
+            color: white;
+            background-color: darkblue;
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"]
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #0816d9;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+        .menubar a {
+            color:white;
+            background-color:black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+        footer {
+            color:white;
+            background-color:black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+
+        }
+        city {
+            background-color: #218838;
+            color:black;
+        }
+    </STYle>
+</head>
+<body background="green.jpg">
+    <div class="menubar">
+        <center>
+        <p>
+        <a href="file:///C:/Users/anand/OneDrive/Desktop/my.html/form.html">Home</a>
+        <a href="">About</a>
+        <a href="file:///C:/Users/anand/OneDrive/Desktop/my.html/registation.html">Register</a>
+        <a href="file:///C:/Users/anand/OneDrive/Desktop/my.html/contact.html">contact</a>
+        </p><br>
+        </center>
+    </div>
+    <div class="from-container">
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+            <br>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" placeholder="enter the email id" required>
+            <br>
+            <label for="date of birth">D/M/Y</label>
+            <input type="date" id="date of birth" placeholder="d/m/y" required>
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" required>
+            <br>
+            <label for="age">AGE</label>
+            <input type="age" id="age" required>
+            <br>
+            <label for="12th-pass">12th passed in current year</label>
+            <br>
+            <select name="12th-pass" id="12th-pass" required>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+            <br>
+            <label for="city" >city</label>
+            <select name="city" id="city">
+                <option value="puducherry">puducherry</option>
+                <option value="tamil Nadu">tamilnadu</option>
+                <option value="karnataka">karnataka</option>
+                <option value="kerala">kerala</option>
+            </select>
+
+            <input type="submit" value="register">
+        </form>
+        <p id="success-message">✅ Registration Completed Successfully!</p>
+
+
+    </div>
+    <footer>
+        <p>copy; 2025 mywebsite. all rights reseved.</p>
+        <p>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </p>
+    </footer>
+    <script>
+        function validdateform() {
+            let isvalid =
+        }
+    function showSuccessMessage() {
+        document.getElementById('success-message').style.display = 'block';
+
+        // Prevent real submission for demo purposes
+        return false;
+    }
+</script>
+
+    
+</body>
+</html>
